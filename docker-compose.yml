@@ -1,0 +1,14 @@
+version: '2.2'
+services:
+  conichichallenge:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: conichi
+    ports:
+      - 8081:8081
+    networks:
+      - network1
+
+networks:
+  network1:
